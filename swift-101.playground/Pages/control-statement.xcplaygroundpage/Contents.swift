@@ -77,3 +77,15 @@ switch status {
         print("Order takeout...")
 }
 
+//Guard
+func checkGender(isMale: Bool) {
+    guard isMale else {
+        print("Female")
+        return
+    }
+    
+    print("Male")
+}
+
+checkGender(isMale: false)
+checkGender(isMale: true)
